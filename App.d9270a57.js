@@ -67,4 +67,4 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"react-router-dom":"/uc1","react/jsx-runtime":"plwR"}],"lY9v":[function(require,module,exports) {
 "use strict";var e=require("react-dom"),r=require("react-router-dom"),t=n(require("./MainPage")),u=n(require("./WelcomePage")),i=require("react/jsx-runtime");function n(e){return e&&e.__esModule?e:{default:e}}const o=()=>(0,i.jsx)(r.BrowserRouter,{children:(0,i.jsxs)(r.Switch,{children:[(0,i.jsx)(r.Route,{path:"/main/",children:(0,i.jsx)(t.default,{})}),(0,i.jsx)(r.Route,{path:"/",children:(0,i.jsx)(u.default,{})})]})});(0,e.render)((0,i.jsx)(o,{}),document.getElementById("root"));
 },{"react-dom":"NKHc","react-router-dom":"/uc1","./MainPage":"DUAX","./WelcomePage":"1lNS","react/jsx-runtime":"plwR"}]},{},["lY9v"], null)
-//# sourceMappingURL=/App.d9270a57.js.map
+//# sourceMappingURL=App.d9270a57.js.map
