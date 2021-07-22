@@ -1,0 +1,51 @@
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(4, 19, 4) 43%, rgb(13, 32, 19) 100%);
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.welcome-title {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 100pt;
+    transform: skewY(-10deg);
+    color: black;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(255, 255, 0, 0.582);
+    text-shadow:  0 0 20px #ffff0000, 0 0 30px #ffff00, 0 0 40px #ffff00, 0 0 55px #ffff00, 0 0 75px #ffff00, 2px 2px 2px rgba(255,255,0,0);
+}
+
+.welcome-title > div {
+    height: 1em;
+}
+
+.welcome-enter {
+    margin-top: 5em;
+    border: none;
+    background-color: transparent;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18pt;
+    color: #ffff00;
+    text-decoration: none;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ffff63, 0 0 10px #ffff00, 0 0 15px rgba(255, 255, 0, 1), 0 0 20px rgba(255, 255, 0, 1), 0 0 25px rgba(255, 255, 0, 1), 0 0 30px rgba(255, 255, 0, 1), 0 0 35px rgba(255, 255, 0, 1);
+    }
+    
+    to {
+      text-shadow: 0 0 10px #f8f87f, 0 0 15px rgba(255, 255, 0, 1), 0 0 20px rgba(255, 255, 0, 1), 0 0 25px rgba(255, 255, 0, 1), 0 0 30px rgba(255, 255, 0, 1), 0 0 35px rgba(255, 255, 0, 1), 0 0 40px rgba(255, 255, 0, 1);
+    }
+  }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
