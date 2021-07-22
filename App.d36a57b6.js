@@ -34923,7 +34923,7 @@ exports.default = void 0;
 
 var _jsxRuntime = require("react/jsx-runtime");
 
-var MainPage = function MainPage() {
+const MainPage = () => {
   return (
     /*#__PURE__*/
     (0, _jsxRuntime.jsx)("p", {
@@ -34946,7 +34946,7 @@ var _reactRouterDom = require("react-router-dom");
 
 var _jsxRuntime = require("react/jsx-runtime");
 
-var WelcomePage = function WelcomePage() {
+const WelcomePage = () => {
   return (
     /*#__PURE__*/
     (0, _jsxRuntime.jsxs)("div", {
@@ -34992,7 +34992,7 @@ var _jsxRuntime = require("react/jsx-runtime");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App() {
+const App = () => {
   return (
     /*#__PURE__*/
     (0, _jsxRuntime.jsx)(_reactRouterDom.BrowserRouter, {
