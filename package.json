@@ -1,11 +1,15 @@
 {
   "name": "gergocity",
+  "homepage": "http://remenyi.github.io/gergocity",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build src/index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",
@@ -19,18 +23,23 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.2.3",
     "parcel": "^1.12.3",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@react-three/cannon": "^2.5.0",
+    "@react-three/fiber": "^7.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "style.css": "^1.0.0"
+    "style.css": "^1.0.0",
+    "use-cannon": "^0.5.3"
   },
   "browserslist": [
     "last 2 Firefox versions",
-    "last 2 Explorer versions"
+    "last 2 Chrome versions",
+    "last 2 Safari versions"
   ]
 }
