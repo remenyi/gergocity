@@ -5,11 +5,12 @@ const Circle = () => {
     return (
         <mesh
             onClick={() => {
-                api.velocity.set(2, 2, 2);
+                api.mass.set(2);
             }}
-            ref = {ref}>
-            <boxBufferGeometry attach="geometry" />
-            <meshLambertMaterial attach="material" color="hotpink" />
+            ref = {ref}
+            >
+            <circleBufferGeometry attach="geometry" />
+            <meshStandardMaterial attach="material" color="hotpink" />
         </mesh>
     );
 };
