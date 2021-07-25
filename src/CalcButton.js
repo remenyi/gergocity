@@ -32,12 +32,13 @@ const CalcButton = (props) => {
             </Text>
             <Plane
                 position={props.position}
-                material={state === "idle"? new MeshBasicMaterial({transparent: "true", opacity: 0.0, side: DoubleSide}) : state === "pressed"? new MeshBasicMaterial({color: props.color, side: DoubleSide}) : new MeshBasicMaterial({color: "white", side: DoubleSide}) }
+                args={[props.width, props.height]}
+                material={state === "idle"? new MeshBasicMaterial({transparent: "true", opacity: 0.0, side: DoubleSide}) : state === "pressed"? new MeshBasicMaterial({transparent: "true", opacity: 0.7, color: props.color, side: DoubleSide}) : new MeshBasicMaterial({transparent: "true", opacity: 0.7, color: "white", side: DoubleSide}) }
                 onPointerEnter={() => setState("hovered")}
                 onPointerLeave={() => setState("idle")}
                 onPointerDown={() => setState("pressed")}
                 onPointerUp={() => setState("hovered")}
-                onClick={() => props.setDisplayValue(props.displayValue.concat(props.text))}>
+                onClick={() => props.setCalcState(props.text)}>
             </Plane>
         </>
 }

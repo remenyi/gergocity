@@ -12,7 +12,7 @@ const Display = (props) => {
                 anchorX="right"
                 anchorY="middle"
                 fontSize={props.fontSize}>
-                    {props.text.slice(-7)}
+                    {props.text.length > 8 ? "too big" : props.text}
             </Text>
         </>;
 }
